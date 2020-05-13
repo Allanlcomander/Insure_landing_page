@@ -62,3 +62,50 @@ button:hover{
     cursor: pointer;
     color: hsl(0, 0%, 98%);
 }
+
+.toggle-btn{
+    display: none;
+    cursor: pointer;
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    
+
+}
+
+.bar1,.bar2,.bar3{
+    width: 35px;
+    height: 5px;
+    background-color: hsl(256, 26%, 20%);
+    margin: 6px  0;
+    transition: 0.4s;
+    
+}
+/* rotate first bar */
+.change .bar1{
+    transform: rotate(-45deg) translate(-9px,6px);
+
+}
+
+/* fade out second bar */
+
+.change .bar2{
+    opacity: 0;
+}
+
+/* rotate last bar */
+
+.change .bar3{
+    transform: rotate(45deg) translate(-8px,-8px);
+}
+
+@media (max-width:600px){
+    .toggle-btn{
+        display: inline-block
+    }
+
+    .nav_links,.cta{
+        display: none;
+        width: 100%;
+    }
+}

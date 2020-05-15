@@ -19,7 +19,7 @@ li,a{
     display: none ;
     cursor: pointer;
     position: absolute;
-    top: 1.5rem;
+    top: .75rem;
     right: 1.5rem;
     
     
@@ -60,7 +60,7 @@ li,a{
     color: hsl(256, 26%, 20%);
     margin: 0 10%;
 }
-#logo{
+.logo{
     font-size: 1.5em;
     text-transform:uppercase ;
 
@@ -124,10 +124,10 @@ li,a{
         background-color: hsl(256, 26%, 20%);
        
         position: absolute;
-        top: 80px;
+        top: 68px;
         right: 0;
         height: 500px;
-        padding-top: 28px;
+        padding-top: 20px;
         background-image: url("../images/bg-pattern-mobile-nav.svg");
         background-repeat: no-repeat;
         background-position: bottom;
@@ -159,8 +159,10 @@ li,a{
     }
     .navbar_links li:last-child{
         border: 1px hsl(0, 0%, 98%) solid;
-        width: 80%;
+        width: 50%;
         margin: 0 auto;
+        padding-bottom: 6px;
+
     
     }
 }

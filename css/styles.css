@@ -108,6 +108,8 @@ a {
 
 header {
   background-color: hsl(0, 0%, 98%);
+  padding: 10px;
+  
 }
 
 .navbar {
@@ -147,7 +149,7 @@ header {
   text-transform: uppercase;
 }
 .navbar_links li {
-  padding: 10px;
+  padding: 11px;
 }
 
 .navbar_links li a:hover {
@@ -241,6 +243,9 @@ img{
 
 }
 
+.introduction button{
+  margin-top: 10px;
+}
 .cta{
     text-transform: uppercase;
     background-color: hsl(256, 26%, 20%);
@@ -258,6 +263,7 @@ img{
 .icons a{
     position: relative;
     top: 40px;
+    margin: 10px;
 }
 
 

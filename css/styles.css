@@ -259,10 +259,57 @@ img{
     color: hsl(256, 26%, 20%);
 }
 
+ /* Services */
+  .services{
+    margin-top: 45vh;
+  }
+
+  .services hr{
+    width: 20%;
+    position: relative;
+    right: 450px;
+  }
+
+  .services .top{
+    font-size: 75px;
+  }
+
+ 
+/* call to action */
+
+.call-to-action{
+  margin-top: 80px;
+}
+
+.call-to-action .row{
+  background-color: hsl(256, 26%, 20%);
+  color: hsl(0, 0%, 98%);
+  height: 300px;
+}
+
+.call-to-action h1{
+  font-size: 50px;
+  padding: 25px;
+  margin-left: 10%;
+}
+
+.call-to-action button{
+  margin-top: 16vh;
+  
+}
+
 /* footer */
+
+footer{
+  margin-top: 80px;
+}
+footer hr{
+  max-width: 100%;
+}
 .icons a{
     position: relative;
     top: 40px;
+    left: 70px;
     margin: 10px;
 }
 

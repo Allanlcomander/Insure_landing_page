@@ -15,7 +15,7 @@ body {
 [class*="col-"] {
   float: left;
   padding: 15px;
-  border: 1px solid black;
+  /* border: 1px solid black; */
 }
 
 .row{
@@ -221,3 +221,44 @@ header {
 img{
     max-width: 100%;
 }
+
+/* introduction */
+
+.introduction{
+    color: hsl(0, 0%, 98%);
+    background-color: hsl(256, 26%, 20%);
+    height: 600px;
+    font-size:1.2em;
+    padding-top: 80px;
+}
+.introduction h1{
+    font-size: 75px;
+}
+
+.introduction hr{
+    width: 20%;
+    float: left;
+
+}
+
+.cta{
+    text-transform: uppercase;
+    background-color: hsl(256, 26%, 20%);
+    padding: 10px 20px;
+    color: hsl(0, 0%, 98%);
+    border: 1px solid hsl(0, 0%, 98%);
+}
+.cta:hover{
+    cursor: pointer;
+    background-color: hsl(0, 0%, 98%);
+    color: hsl(256, 26%, 20%);
+}
+
+/* footer */
+.icons a{
+    position: relative;
+    top: 40px;
+}
+
+
+

@@ -306,12 +306,34 @@ footer{
 footer hr{
   max-width: 100%;
 }
+
+footer h1{
+  text-transform: uppercase;
+}
 .icons a{
     position: relative;
-    top: 40px;
+    top: 30px;
     left: 70px;
     margin: 10px;
 }
 
+.icons a :hover{
+  background-color: hsl(256, 26%, 20%);
+}
+
+.footer-list ul{
+  list-style-type: none;
+}
+
+.footer-list ul li{
+  line-height: 28px;
+}
+.footer-list ul li:hover{
+  cursor: pointer;
+  text-decoration: underline;
+}
+ .footer-list ul li:nth-child(1){
+  margin-bottom: 18px;
+ }
 
 

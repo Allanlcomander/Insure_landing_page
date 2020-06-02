@@ -8,8 +8,13 @@ body {
   margin: 0;
   padding: 0;
   font-size: 16px;
-  font-family: karla;
+  font-family: karla, sans-serif;
   font-weight: 400, 700;
+}
+
+h1{
+  font-family: DM Serif Display, sans-serif;
+  font-weight: 400;
 }
 
 /* grid layout */
@@ -21,7 +26,7 @@ body {
 }
 
 .row{
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
 }
 
@@ -202,6 +207,84 @@ header {
 .mobile-img{
   display: none;
 }
+.introduction{
+  background-color: hsl(256, 26%, 20%);
+  height: 600px; 
+  /* background-image: url("../images/bg-pattern-intro-right-desktop.svg"); */
+  /* background-repeat: no-repeat; */
+  
+  /* background-size: 27%; */
+  /* z-index: 111; */
+  
+  
+    /* height: 82vh ; */
+     /* height: 42vw;  */
+}
+
+
+
+.introduction::after{
+  content: "";
+  position: absolute;
+  top: 0; right: 0;
+  bottom: -340px; left: 0;
+  background-image: url("../images/bg-pattern-intro-left-desktop.svg");
+  background-repeat: no-repeat;
+  background-position-y: bottom;
+}
+ .desktop::after{
+  content: "";
+  position: absolute;
+  top: 78px; right: 0;
+  bottom: 0; left: 30px;
+  background-image: url("../images/bg-pattern-intro-right-desktop.svg");
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-size: 27%;
+  
+ }
+
+.introduction img{
+  width: 100%;
+  height: auto;
+
+}
+.introduction hr{
+  float: left;
+  width: 20%;
+}
+.introduction hr::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.introduction .row{
+  padding: 80px 0 0 0;
+  color: hsl(0, 0%, 98%);
+}
+.heading-top{
+  font-size: 4vw;
+  line-height: 50px;
+  
+}
+
+.introduction button{
+  border: 1px hsl(0, 0%, 98%) solid;
+  padding: 10px 25px;
+  color: hsl(0, 0%, 98%);
+  background-color: hsl(256, 26%, 20%);
+  text-transform: uppercase;
+  margin-top: 10px;
+  
+}
+
+.cta:hover{
+  cursor: pointer;
+  background-color: hsl(0, 0%, 98%);
+  color: hsl(256, 26%, 20%);
+}
+
 
 
 

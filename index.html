@@ -7,13 +7,10 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Insure landing page</title>
+  
  
   <link rel="stylesheet" href="css/styles.css">
 
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
   <header>
@@ -35,11 +32,11 @@
       </nav>
   </header>
  
-<section>
-
-  <div class="container introduction">
-    <div class="row">
-    
+  <section class="introduction">
+    <div class="row ">
+      <div class="col-4 mobile-img">
+         <img src="images/image-intro-mobile.jpg" alt="image-intro-mobile" width="100%">
+        </div>
       <div class="col-6">
         <hr>
         <h1>Humanizing your insurance.</h1>
@@ -48,17 +45,16 @@
           and your loved ones are protected.</p>
           <button class="cta">View plans</button>
       </div>
-      <div class="col-6">
-        <img src="images/image-intro-desktop.jpg" alt="image-intro-desktop">
+      <div class="col-6 desktop">
+        <img src="images/image-intro-desktop.jpg" alt="image-intro-desktop" width="100%">
       </div>
     </div>
-  </div>
+  </section>
   
-</section>
+
 
 <!-- services -->
-<section>
-  <div class="container services">
+  <section class="services">
     <div class="row">
       <hr>
       <h1 class="top">We’re different</h1>
@@ -81,22 +77,21 @@
           sure you’re covered when you need it.</p>
       </div>
     </div>
-  </div>
-</section>
+  </section>
+
 
 <!-- cta section -->
-<section>
-  <div class="container call-to-action">
-    <div class="row">
+
+  <section class="">
+    <div class="row call-to-action">
       <div class="col-9">
-        <h1>Find out more <br> about how we work</h1>
-      </div>
-      <div class="col-3">
+        <h1 class="find-out">Find out more  about how we work</h1>
+       
         <button class="cta">How we work</button>
       </div>
     </div>
-  </div>
-</section>
+  </section>
+
 
 <footer>
   <div class="container">
@@ -105,21 +100,23 @@
         <h1>insure</h1>
       </div>
       <div class="col-3 icons">
-        <a href="#"><img src="images/icon-facebook.svg" alt="icon-facebook"></a>
-        <a href="#"><img src="images/icon-twitter.svg" alt="icon-twitter"></a>
-        <a href="#"> <img src="images/icon-pinterest.svg" alt="icon-pinterest"></a>
-        <a href="#"><img src="images/icon-instagram.svg" alt="icon-instagram"></a>
+        <ul>
+          <li><a href="#"><img src="images/icon-facebook.svg" alt="icon-facebook"></a></li>
+          <li><a href="#"><img src="images/icon-twitter.svg" alt="icon-twitter"></a></li>
+          <li><a href="#"> <img src="images/icon-pinterest.svg" alt="icon-pinterest"></a></li>
+          <li><a href="#"><img src="images/icon-instagram.svg" alt="icon-instagram"></a></li>
+        </ul>
+      
       </div>
     </div>
     
-    <div class="row">
-      <hr>
-    </div>
   </div>
   
-  <div class="container footer-list">
+
+  <div class="footer-list">
     <div class="row">
-      <div class="col-3">
+      <hr>
+      <div class="col-3 col-s-12">
         <ul>
           <li> Our company</li>
           <li>How we work</li>
@@ -128,7 +125,7 @@
           <li>Reviews</li>
         </ul>
       </div>
-      <div class="col-3">
+      <div class="col-3 col-s-12">
         <ul>
           <li>Help me</li>
           <li>FAQ</li>
@@ -137,7 +134,7 @@
           <li>Cookies</li>
         </ul>
       </div>
-      <div class="col-3">
+      <div class="col-3 col-s-12">
         <ul>
           <li>Contact</li>
           <li>Sales</li>
@@ -145,7 +142,7 @@
           <li>Live chat</li>
         </ul>
       </div>
-      <div class="col-3">
+      <div class="col-3 col-s-12">
         <ul>
           <li>Others</li>
           <li>Careers</li>
@@ -158,24 +155,6 @@
 </footer>
   
 
-  
-
-  
-  
-  
-  
-
-  
-
-  
-  
-  
-
-  
-
-  
- 
-  
 
   
   <div class="attribution">

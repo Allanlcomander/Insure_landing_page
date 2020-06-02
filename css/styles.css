@@ -1,70 +1,49 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Karla:wght@400;700&display=swap");
-* {
+ *{
   box-sizing: border-box;
+  
 }
 
 body {
   margin: 0;
   padding: 0;
   font-size: 16px;
+  font-family: karla;
+  font-weight: 400, 700;
 }
-
-
 
 /* grid layout */
 [class*="col-"] {
   float: left;
   padding: 15px;
-  /* border: 1px solid black; */
+  border: 1px black solid;
+  
 }
 
 .row{
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
 }
 
 .row::after{
     content:"";
-    clear: both;
     display: table;
+    clear: both;
+   
 }
 
-.col-1 {
-  width: 8.33%;
-}
-.col-2 {
-  width: 16.66%;
-}
-.col-3 {
-  width: 25%;
-}
-.col-4 {
-  width: 33.33%;
-}
-.col-5 {
-  width: 41.66%;
-}
-.col-6 {
-  width: 50%;
-}
-.col-7 {
-  width: 58.33%;
-}
-.col-8 {
-  width: 66.66%;
-}
-.col-9 {
-  width: 75%;
-}
-.col-10 {
-  width: 83.33%;
-}
-.col-11 {
-  width: 91.66%;
-}
-.col-12 {
-  width: 100%;
-}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 { width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 { width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 { width: 91.66%;}
+.col-12 {width: 100%;}
 
 li,
 a {
@@ -105,12 +84,12 @@ a {
 .change .bar3 {
   transform: rotate(45deg) translate(-8px, -8px);
 }
-
+/* 
 header {
   background-color: hsl(0, 0%, 98%);
   padding: 10px;
   
-}
+} */
 
 .navbar {
   display: flex;
@@ -220,120 +199,14 @@ header {
   }
 }
 
-img{
-    max-width: 100%;
+.mobile-img{
+  display: none;
 }
 
-/* introduction */
-
-.introduction{
-    color: hsl(0, 0%, 98%);
-    background-color: hsl(256, 26%, 20%);
-    height: 600px;
-    font-size:1.2em;
-    padding-top: 80px;
-}
-.introduction h1{
-    font-size: 75px;
-}
-
-.introduction hr{
-    width: 20%;
-    float: left;
-
-}
-
-.introduction button{
-  margin-top: 10px;
-}
-.cta{
-    text-transform: uppercase;
-    background-color: hsl(256, 26%, 20%);
-    padding: 10px 20px;
-    color: hsl(0, 0%, 98%);
-    border: 1px solid hsl(0, 0%, 98%);
-}
-.cta:hover{
-    cursor: pointer;
-    background-color: hsl(0, 0%, 98%);
-    color: hsl(256, 26%, 20%);
-}
-
- /* Services */
-  .services{
-    margin-top: 45vh;
-  }
-
-  .services hr{
-    width: 20%;
-    position: relative;
-    right: 450px;
-  }
-
-  .services .top{
-    font-size: 75px;
-  }
-
- 
-/* call to action */
-
-.call-to-action{
-  margin-top: 80px;
-}
-
-.call-to-action .row{
-  background-color: hsl(256, 26%, 20%);
-  color: hsl(0, 0%, 98%);
-  height: 300px;
-}
-
-.call-to-action h1{
-  font-size: 50px;
-  padding: 25px;
-  margin-left: 10%;
-}
-
-.call-to-action button{
-  margin-top: 16vh;
-  
-}
-
-/* footer */
-
-footer{
-  margin-top: 80px;
-}
-footer hr{
-  max-width: 100%;
-}
-
-footer h1{
-  text-transform: uppercase;
-}
-.icons a{
-    position: relative;
-    top: 30px;
-    left: 70px;
-    margin: 10px;
-}
-
-.icons a :hover{
-  background-color: hsl(256, 26%, 20%);
-}
-
-.footer-list ul{
-  list-style-type: none;
-}
-
-.footer-list ul li{
-  line-height: 28px;
-}
-.footer-list ul li:hover{
-  cursor: pointer;
-  text-decoration: underline;
-}
- .footer-list ul li:nth-child(1){
-  margin-bottom: 18px;
- }
 
 
+
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }

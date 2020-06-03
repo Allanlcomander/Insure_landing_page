@@ -9,3 +9,5 @@ let navbarLinks = document.getElementsByClassName("navbar_links")[0];
 myToggle.addEventListener('click',() => {
     navbarLinks.classList.toggle('active');
 });
+
+

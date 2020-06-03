@@ -21,14 +21,20 @@ h1{
 [class*="col-"] {
   float: left;
   padding: 15px;
-  border: 1px black solid;
+
+  height: 100%;
+  
+  
   
 }
 
 .row{
     width: 80%;
     margin: 0 auto;
+    height: 100%;
+    
 }
+
 
 .row::after{
     content:"";
@@ -54,6 +60,7 @@ li,
 a {
   font-size: 1em;
   text-decoration: none;
+  list-style: none;
 }
 
 .toggle-btn {
@@ -156,6 +163,10 @@ header {
   cursor: pointer;
 }
 
+header{
+  position: relative;
+}
+
 @media (max-width: 600px) {
   .toggle-btn {
     display: block;
@@ -208,13 +219,12 @@ header {
   display: none;
 }
 .introduction{
+  position: relative;
   background-color: hsl(256, 26%, 20%);
   height: 600px; 
-  /* background-image: url("../images/bg-pattern-intro-right-desktop.svg"); */
-  /* background-repeat: no-repeat; */
   
-  /* background-size: 27%; */
-  /* z-index: 111; */
+  
+  
   
   
     /* height: 82vh ; */
@@ -231,19 +241,24 @@ header {
   background-image: url("../images/bg-pattern-intro-left-desktop.svg");
   background-repeat: no-repeat;
   background-position-y: bottom;
+  z-index: 0;
+  
+  
 }
  .desktop::after{
   content: "";
   position: absolute;
-  top: 78px; right: 0;
+  top: 0; right: 0;
   bottom: 0; left: 30px;
   background-image: url("../images/bg-pattern-intro-right-desktop.svg");
   background-repeat: no-repeat;
   background-position: right top;
   background-size: 27%;
   
+  
  }
 
+ 
 .introduction img{
   width: 100%;
   height: auto;
@@ -260,6 +275,7 @@ header {
 }
 
 .introduction .row{
+  
   padding: 80px 0 0 0;
   color: hsl(0, 0%, 98%);
 }
@@ -270,6 +286,7 @@ header {
 }
 
 .introduction button{
+  
   border: 1px hsl(0, 0%, 98%) solid;
   padding: 10px 25px;
   color: hsl(0, 0%, 98%);
@@ -277,15 +294,115 @@ header {
   text-transform: uppercase;
   margin-top: 10px;
   
+  
 }
 
-.cta:hover{
+button:hover{
   cursor: pointer;
   background-color: hsl(0, 0%, 98%);
   color: hsl(256, 26%, 20%);
 }
 
+/* services */
 
+.services{
+  margin-top: 40vh;
+  
+}
+
+.heading-mid{
+  font-size: 70px;
+  color: hsl(270, 9%, 17%);
+  clear: left;
+  padding: 50px 0 0 0;
+}
+
+.hr-mid{
+  float: left;
+  width: 20%;
+
+}
+.hr-mid::after{
+  content: "";
+  display: block;
+  clear: both;
+  
+}
+
+.call-action{
+  margin: 100px 0;
+}
+
+.call-to-action{
+  background-color: hsl(256, 26%, 20%);
+  height: 250px;
+  background-image: url("../images/bg-pattern-how-we-work-desktop.svg");
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: contain;
+}
+
+.call-to-action button{
+  border: 1px hsl(0, 0%, 98%) solid;
+  padding: 10px 25px;
+  color: hsl(0, 0%, 98%);
+  background-color: hsl(256, 26%, 20%);
+  text-transform: uppercase;
+  position: relative;
+  top: 40%;
+  bottom: 40%;
+  left: 10%;
+}
+.find-out{
+  padding: 15px;
+  margin-left: 50px;
+  color: hsl(0, 0%, 98%);
+  font-size: 45px;
+  line-height: 48px;
+}
+
+.icon-section{
+  height: 100px;
+}
+.header-icon{
+  font-size: 40px;
+  text-transform: uppercase;
+}
+.icons ul li{
+  display: inline-block;
+  position: relative;
+  
+  margin-top: 30px;
+  margin-left: 10px;
+  left: 65px;
+}
+
+
+footer{
+  padding-top: 80px;
+  background-image: url("../images/bg-pattern-footer-desktop.svg");
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.footer-list{
+  margin-top: 10px;
+  
+}
+.footer-list li{
+  text-transform: uppercase;
+  line-height: 30px;
+  font-weight: 700;
+  color: hsl(270, 9%, 17%);
+}
+.footer-list li:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+.footer-list li:nth-child(1){
+  padding: 0 0 20px 0;
+  color: hsl(273, 4%, 51%);
+}
 
 
 

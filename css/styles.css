@@ -21,8 +21,9 @@ h1{
 [class*="col-"] {
   float: left;
   padding: 15px;
-
   height: 100%;
+  
+  
   
   
   
@@ -67,7 +68,7 @@ a {
   display: none;
   cursor: pointer;
   position: absolute;
-  top: 0.75rem;
+  top: 1.2rem;
   right: 1.5rem;
 }
 
@@ -216,6 +217,11 @@ header{
   }
 }
 
+
+button{
+  position: relative;
+  z-index: 9999;
+}
 .mobile{
   display: none;
 }
@@ -224,12 +230,6 @@ header{
   background-color: hsl(256, 26%, 20%);
   height: 600px; 
   
-  
-  
-  
-  
-    /* height: 82vh ; */
-     /* height: 42vw;  */
 }
 
 
@@ -353,6 +353,11 @@ button:hover{
   bottom: 40%;
   left: 10%;
 }
+.call-to-action button:hover{
+  cursor: pointer;
+  background-color: hsl(0, 0%, 98%);
+  color: hsl(256, 26%, 20%);
+}
 .find-out{
   padding: 15px;
   margin-left: 50px;
@@ -419,6 +424,8 @@ footer{
   
   } 
 
+  
+
   .introduction .row{
     width: 100%;
   }
@@ -433,14 +440,31 @@ footer{
   .introduction{
     height: auto;
     padding-top: 0;
+    
+    
 
   }
+  .top-content{
+    background-image: url("../images/bg-pattern-intro-left-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: top left;
+  }
 
+  .desktop::after{
+    content: "";
+    position: absolute;
+    top: 0; right: 0;
+    bottom: -142px; left: 0;
+    background-image: url("../images/bg-pattern-intro-right-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    
+  }
   .introduction hr{
     display: none;
   }
 
-  .desktop{
+  .desktop img{
     display: none;
   }
 
@@ -498,5 +522,161 @@ footer{
   left: 0;
   margin: 50px;
 }
+/* footer */
+.icons ul{
+  margin: 0;
+  padding: 0;
+}
+.icons ul li{
+  position: relative;
+  left: 0;
+  
+}
+
+.icon img:hover{
+  /* cursor: pointer; */
+  fill: hsl(270, 9%, 17%);
+}
+
+
+
+.header-icon{
+  margin-bottom: 0;
+}
+
+.footer-list ul{
+  padding: 0;
+}
+ footer{
+   background-image: none;
+   background-image: url("../images/bg-pattern-footer-mobile.svg");
+   background-repeat: no-repeat;
+   background-size: contain;
+   background-position: top;
+ }
+
+
+}
+
+
+
+@media (width: 768px){
+ 
+  [class*="col-"] {
+    width: 100%;
+    padding: 0;
+    
+  
+  }  
+
+
+  .top-content{
+    background-image: url("../images/bg-pattern-intro-left-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: top left;
+  }
+
+  .top-content::after{
+    content: "";
+    position: absolute;
+    top: 0; right: 0;
+    bottom: -180px; left: 0;
+    
+    background-image: url("../images/bg-pattern-intro-right-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    
+    
+    
+  }
+
+  .introduction .row{
+    width: 100%;
+  }
+  body{
+    text-align: center;
+  }
+  .introduction::after{
+    display: none;
+    
+  }
+
+  .introduction{
+    height: auto;
+    padding-top: 0;
+
+  }
+
+  .introduction hr{
+    display: none;
+  }
+
+  .desktop{
+    display: none;
+  }
+
+  .mobile{
+    display: block;
+  
+}
+
+ .mobile img{
+  width: 100%;
+
+}
+
+.heading-top{
+  font-size: 10vw;
+  line-height: 70px;
+  margin: 15px;
+}
+
+.top-content p{
+  padding: 20px;
+}
+
+.top-content button{
+  margin: 25px;
+}
+
+.hr-mid{
+  float: none;
+  width: 30%;
+}
+
+  .icons ul{
+    padding: 0;
+  
+  }
+  .icons ul li{
+    position: relative;
+    left: 0;
+    
+  }
+
+  .call-to-action{
+    width: 90%;
+    height: auto;
+  }
+
+  .find-out{
+    font-size: 38px;
+    padding:40px 0 0 25px;
+    margin: 0 auto;
+  }
+  .call-to-action button{
+    left: 20px;
+    padding: 10px;
+    margin: 20px;
+    z-index: 9999;
+  }
+
+  .services{
+    text-align: center;
+  }
+
+  .footer-list ul{
+    padding: 0;
+  }
 
 }

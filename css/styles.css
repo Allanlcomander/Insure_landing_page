@@ -165,6 +165,7 @@ header {
 
 header{
   position: relative;
+  z-index: 9999;
 }
 
 @media (max-width: 600px) {
@@ -215,7 +216,7 @@ header{
   }
 }
 
-.mobile-img{
+.mobile{
   display: none;
 }
 .introduction{
@@ -241,7 +242,7 @@ header{
   background-image: url("../images/bg-pattern-intro-left-desktop.svg");
   background-repeat: no-repeat;
   background-position-y: bottom;
-  z-index: 0;
+
   
   
 }
@@ -274,8 +275,7 @@ header{
   clear: both;
 }
 
-.introduction .row{
-  
+.introduction{
   padding: 80px 0 0 0;
   color: hsl(0, 0%, 98%);
 }
@@ -404,9 +404,99 @@ footer{
   color: hsl(273, 4%, 51%);
 }
 
-
-
-
-
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
+
+
+
+/* media querries */
+
+@media only screen and (min-width: 375px) and (max-width: 425px){
+  [class*="col-"] {
+    width: 100%;
+    padding: 0;
+    
+  
+  } 
+
+  .introduction .row{
+    width: 100%;
+  }
+  body{
+    text-align: center;
+  }
+  .introduction::after{
+    display: none;
+    
+  }
+
+  .introduction{
+    height: auto;
+    padding-top: 0;
+
+  }
+
+  .introduction hr{
+    display: none;
+  }
+
+  .desktop{
+    display: none;
+  }
+
+  .mobile{
+    display: block;
+  
+}
+
+ .mobile img{
+  width: 100%;
+
+}
+
+.heading-top{
+  font-size: 10vw;
+  line-height: 40px;
+  margin: 15px;
+}
+
+.top-content p{
+  padding: 20px;
+}
+
+.top-content button{
+  margin: 25px;
+}
+
+.hr-mid{
+  float: none;
+  width: 50%;
+}
+
+.heading-mid{
+  font-size: 50px;
+  padding: 0;
+}
+
+.call-to-action{
+  width: 90%;
+  margin: 0 auto;
+  height: auto;
+  background-image: none;
+  background-image: url("../images/bg-pattern-how-we-work-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-size: contain;
+}
+
+.find-out{
+  padding:20px 0 0 0;
+  margin: 0 auto;
+}
+
+.call-to-action button{
+  left: 0;
+  margin: 50px;
+}
+
+}
